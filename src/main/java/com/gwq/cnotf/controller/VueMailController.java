@@ -63,8 +63,8 @@ public class VueMailController {
     @ApiOperation(value = "查询用户findByCustomEnglishName", notes = "查询接口findByCustomEnglishName")
     @PostMapping(value = "/queryyuanallzidyi")
     @ResponseBody
-    public List<VueCustomEntity> findzidingyi (@RequestParam String customEnglishName,@RequestParam String deleteFlag){
-        List<VueCustomEntity> list = vueMailService.findByCustomEnglishName(customEnglishName,deleteFlag);
+    public List<VueCustomEntity> findzidingyi (@RequestBody VueCustomEntity vueCustomEntity){
+        List<VueCustomEntity> list = vueMailService.findByCustomEnglishName(vueCustomEntity.getCustomEnglishName(),vueCustomEntity.getDeleteFlag());
         return list;
     }
 }
