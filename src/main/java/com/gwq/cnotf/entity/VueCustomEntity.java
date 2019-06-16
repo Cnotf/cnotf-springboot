@@ -1,5 +1,9 @@
 package com.gwq.cnotf.entity;
 
+import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -10,13 +14,26 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "vue_custom", schema = "vuemail", catalog = "")
+//忽略属性
+@JsonIgnoreProperties({"phone","address"})
+//自定义命名格式规则
+@JsonNaming(PropertyNamingStrategy.LowerCaseStrategy.class)
 public class VueCustomEntity {
+
+    //定义json组 用以只显示某些属性
+    public interface CustomEnglishNameView {};
+    public interface CustomChineseNameView {};
     private long id;
+    @JsonView(CustomEnglishNameView.class)
     private String customEnglishName;
+    @JsonView(CustomChineseNameView.class)
     private String customChineseName;
+    @JsonIgnore
     private String phone;
     private String address;
     private String customStatus;
+    //json别名
+    @JsonProperty("gwq_flag")
     private String deleteFlag;
 
     @Id

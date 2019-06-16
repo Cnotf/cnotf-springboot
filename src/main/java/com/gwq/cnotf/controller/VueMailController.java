@@ -1,5 +1,6 @@
 package com.gwq.cnotf.controller;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import com.gwq.cnotf.entity.VueCustomEntity;
 import com.gwq.cnotf.service.VueMailService;
 import io.swagger.annotations.Api;
@@ -38,6 +39,7 @@ public class VueMailController {
     }
 
     @ApiOperation(value = "查询用户@Query", notes = "查询接口@Query")
+    @JsonView(VueCustomEntity.CustomChineseNameView.class)
     @GetMapping(value = "/queryall")
     @ResponseBody
     public List<VueCustomEntity> findAllCustomes (){
@@ -47,6 +49,7 @@ public class VueMailController {
 
     @ApiOperation(value = "查询用户@Query带参数", notes = "查询接口@Query带参数")
     @GetMapping(value = "/queryallBYid")
+    @JsonView(VueCustomEntity.CustomEnglishNameView.class)
     @ResponseBody
     public List<VueCustomEntity> findAllCustomes (@RequestParam Long userId){
         List<VueCustomEntity> list = vueMailService.getQueryListById(userId);
@@ -54,6 +57,7 @@ public class VueMailController {
     }
 
     @ApiOperation(value = "查询用户jpa.findAll", notes = "查询接口jpa.findAll")
+    @JsonView(VueCustomEntity.CustomChineseNameView.class)
     @GetMapping(value = "/queryyuanall")
     @ResponseBody
     public List<VueCustomEntity> findYuanShenAllCustomes (){

@@ -40,7 +40,6 @@ public class VueMailService {
     }
 
     public List<VueCustomEntity> findByCustomEnglishName (String customEnglishName, String deleteFlag) {
-        System.out.println(customEnglishName);
         List<VueCustomEntity> vueCustomEntityList = vueMailRepository.findByCustomEnglishNameAndDeleteFlagLike(customEnglishName,deleteFlag);
         return vueCustomEntityList;
     }
