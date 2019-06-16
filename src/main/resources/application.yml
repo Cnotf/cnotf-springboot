@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vuemail
+    username: root
+    password: cnotfGao2018
+      #      driver-class-name: oracle.jdbc.OracleDriver
+      #      username: NEWRISK
+      #      password: NEWRISK
+      #      url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+
+  #  host: localhost
+   # port: 6379
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  #profiles:
+ #   active: dev
+server:
+  port: 8083
+  servlet:
+    context-path: /gwq
+#nacos:
+#  config:
+#    server-addr: 192.168.59.131:8848
+#  discovery:
+#   server-addr: 192.168.59.131:8848
+#logging:
+ # level:
+ #   root: info
+  #file: log\my1.log
+ # path: E:\temp1\log
+  #pattern:
+    #console: '%level %date{ISO8601} %logger{20}.%M %L :%m%n'
+   # file: '%level %date{ISO8601} %logger{20}.%M %L :%m
