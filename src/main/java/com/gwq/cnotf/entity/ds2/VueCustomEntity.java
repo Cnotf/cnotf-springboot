@@ -1,4 +1,4 @@
-package com.gwq.cnotf.entity;
+package com.gwq.cnotf.entity.ds2;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;

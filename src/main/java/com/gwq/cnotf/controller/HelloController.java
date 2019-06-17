@@ -1,6 +1,6 @@
 package com.gwq.cnotf.controller;
 
-import com.gwq.cnotf.entity.TcPfVarEntity;
+import com.gwq.cnotf.entity.ds1.TcPfVarEntity;
 import com.gwq.cnotf.service.TcPfVarService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

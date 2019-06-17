@@ -1,6 +1,4 @@
-package com.gwq.cnotf.entity;
-
-import com.sun.javafx.beans.IDProperty;
+package com.gwq.cnotf.entity.ds1;
 
 import javax.persistence.*;
 import java.math.BigInteger;

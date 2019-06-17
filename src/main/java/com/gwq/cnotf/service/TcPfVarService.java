@@ -1,7 +1,7 @@
 package com.gwq.cnotf.service;
 
-import com.gwq.cnotf.entity.TcPfVarEntity;
-import com.gwq.cnotf.repository.TcPfVarRepository;
+import com.gwq.cnotf.entity.ds1.TcPfVarEntity;
+import com.gwq.cnotf.repository.ds1.TcPfVarRepository;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

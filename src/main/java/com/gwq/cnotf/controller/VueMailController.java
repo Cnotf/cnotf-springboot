@@ -1,7 +1,7 @@
 package com.gwq.cnotf.controller;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import com.gwq.cnotf.entity.VueCustomEntity;
+import com.gwq.cnotf.entity.ds2.VueCustomEntity;
 import com.gwq.cnotf.service.VueMailService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

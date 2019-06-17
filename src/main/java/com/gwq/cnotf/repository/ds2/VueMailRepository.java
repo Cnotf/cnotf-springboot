@@ -1,8 +1,9 @@
-package com.gwq.cnotf.repository;
+package com.gwq.cnotf.repository.ds2;
 
-import com.gwq.cnotf.entity.VueCustomEntity;
+import com.gwq.cnotf.entity.ds2.VueCustomEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @Description:
  * @Date: Create in 14:12 2019/06/14
  */
+@Repository
 public interface VueMailRepository extends JpaRepository<VueCustomEntity, Long> {
 
     @Query(value = "SELECT * FROM VUE_CUSTOM", nativeQuery = true)

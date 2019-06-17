@@ -1,7 +1,7 @@
 package com.gwq.cnotf.service;
 
-import com.gwq.cnotf.entity.VueCustomEntity;
-import com.gwq.cnotf.repository.VueMailRepository;
+import com.gwq.cnotf.entity.ds2.VueCustomEntity;
+import com.gwq.cnotf.repository.ds2.VueMailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
