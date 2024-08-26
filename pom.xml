@@ -51,7 +51,7 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.5.0</version>
+            <version>2.10.0</version>
         </dependency>
         <!--这个版本的oracle驱动包无法自动下载 需要手动下载并且放入本地仓库中-->
         <dependency>
